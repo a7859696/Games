@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/background"
+    tools:context="com.li.games.MainActivity">
+
+    <TextView
+
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择难度:"
+        android:textSize="24dp"
+        />
+      <TextView
+          android:paddingLeft="10dp"
+          android:id="@+id/tv_2"
+          android:clickable="true"
+          android:layout_marginTop="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2 X 2"
+          android:textSize="22dp"
+          android:layout_toRightOf="@+id/tv_title"
+          android:background="@color/background"
+
+          />
+    <!--       <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_3"
+              android:layout_below="@+id/tv_title"
+              android:layout_marginLeft="170dp"
+              android:text="3 X 3"
+              android:visibility="gone"
+              android:clickable="true"/>
+         <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_4"
+              android:layout_below="@+id/tv_title"
+              android:layout_marginLeft="220dp"
+              android:text="4 X 4"
+              android:visibility="gone"
+              android:clickable="true"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_22"
+              android:visibility="gone"
+              android:layout_below="@+id/tv_title"
+              android:layout_marginLeft="120dp"
+              android:text="2 X 2"
+
+              android:clickable="true"/>-->
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_2"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center_horizontal"
+        android:padding="8sp"
+        android:verticalSpacing="8sp"
+        android:numColumns="4"
+        android:layout_marginTop="25dp"
+        >
+
+    </GridView>
+</RelativeLayout>
